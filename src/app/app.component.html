@@ -1,8 +1,16 @@
 <h3>{{title}}</h3>
 
-<div *ngFor = "let persona of arr">
-    <p>Nombre: {{persona.Nombre}}</p>
-    <p>Edad: {{persona.Edad}}</p>
+<div *ngFor="let personas of persona">
+    <p>Id: {{personas._id}}</p>
+    <p>Balance: {{personas.balance}}</p>
+    <img src={{personas.picture}}>
+    <p>Edad: {{personas.age}}</p>
+    <p>Color de ojos: {{personas.eyeColor}}</p>
+    <p>Primer Nombre: {{personas.name.first}}</p>
+    <p>Apellido: {{personas.company}}</p>
+    <p>Email: {{personas.email}}</p>
+    <p>Telf: {{personas.phone}}</p>
+    <p>Direccion: {{personas.address}}</p>
 </div>
 
 <button (click) = "insertarPersona()">Insertar Persona</button>
